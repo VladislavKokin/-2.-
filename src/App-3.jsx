@@ -71,7 +71,7 @@ export const App = () => {
 				{SIGN.map((item) => (
 					<button onClick={() => setOperator(item)} className={`${styles.buttons} ${styles.buttonsSign}`}>{item}</button>
 				))}
-				<button onClick={calculate} className={`${styles.buttons} ${styles.buttonsEqual}`}>=</button>
+				<button onClick={calculate} className={styles.buttons}>=</button>
 			</div>
 		</div>
 	);
