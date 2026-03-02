@@ -1,19 +1,16 @@
 import data from './data.json';
-import styles from './app.module.css';;
+import styles from './app.module.css';
 import './index.css'
 import { useState } from 'react';
 
 // Задание #2
 
 export const App = () => {
-	// Можно задать 2 состояния — steps и activeIndex
 
     const [steps] = useState(data)
     const [activeIndex, setActiveIndex] = useState(0)
 
     const activeStep = steps[activeIndex]
-
-	// И определить 3 обработчика: Клик назад, Клик вперед, Начать сначала
 
 	const handleBack = () => {
 		if(!isFirstStep) {
